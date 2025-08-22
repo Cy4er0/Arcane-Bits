@@ -1,7 +1,41 @@
-const btc1= document.getElementsByClassName("btn1");
-const btn2=document.getElementsByClassName("btn2");
-const btn3=document.getElementsByClassName("btn3");
-const text=document.getElementById("text");
+const btn1= document.querySelector(".btn1");
+const btn2=document.querySelector(".btn2");
+const btn3=document.querySelector(".btn3");
+const text=document.querySelector("#text");
+
+
+const goLeft=()=>{
+    update(actions[0])
+}
+
+const goStore=()=>{
+    update(actions[1]);
+}
+
+const goRight=()=>{
+    update(actions[2]);
+}
+
+
+const returnBack=()=>{
+
+}
+
+
+const buyHealth=()=>{
+
+}
+
+
+const buyPotion=()=>{
+
+}
+
+
+const usePotion=()=>{
+
+
+}
 
 const actions=[{
     name: "go right",
@@ -24,6 +58,7 @@ const actions=[{
 }
 ];
 
+
 const update=(action)=>{
     btn1.innerText=action["button text"][0];
     btn2.innerText=action["button text"][1];
@@ -35,8 +70,9 @@ const update=(action)=>{
 
 }
 
-const goLeft=()=>{
-    update(actions[0]);
+/*const goLeft=()=>{
+    console.log("finally")
+    text.innerHTML="yes finally";
 }
 
 const goStore=()=>{
@@ -47,10 +83,34 @@ const goRight=()=>{
     update(actions[2]);
 }
 
-btn1.onclick=goLeft();
-btn2.onclick=goStore();
-btn3.onclick=goRight();
 
-btn1.addEventListener("click",goLeft);
+const returnBack=()=>{
+
+}
+
+
+const buyHealth=()=>{
+
+}
+
+
+const buyPotion=()=>{
+
+}
+
+
+const usePotion=()=>{
+
+
+}*/
+
+
+btn1.onclick=goLeft;
+btn2.onclick=goStore;
+btn3.onclick=goRight;
+
+console.log(btn1,btn2,btn3,text);
+
+/*btn1.addEventListener("click",goLeft);
 btn2.addEventListener("click",goStore);
-btn3.addEventListener("click",goRight);
+btn3.addEventListener("click",goRight);*/
